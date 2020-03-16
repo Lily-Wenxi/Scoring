@@ -1,0 +1,9 @@
+#1 to connect link to mysql
+ sudo ln -s /usr/local/mysql/bin/mysql /usr/local/bin/mysql
+#2 to check status of mysql
+ ps aux | grep mysql
+ 87351   0.0  0.0  4268320    688 s000  S+    8:31pm   0:00.00 grep mysql
+#3 to check the existence of /tmp/mysql.sock (error)
+ stat /tmp/mysql.sock
+ # to force mysql start
+ sudo /usr/local/mysql/support-files/mysql.server start 
